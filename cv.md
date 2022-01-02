@@ -36,6 +36,9 @@ Self education:
 - Stepik (statistics, ml)
 
 # Experience
+I have no representative projects at the moment. Hope to alter this in the near future.
+
+ML competition: [github link](https://github.com/MokryYezhik/ds_ml_projects/tree/main/open_data_battle_bank_otkrytie)
 
 # Code example
 
