@@ -41,6 +41,13 @@ I have no representative projects at the moment. Hope to alter this in the near 
 ML competition: [github link](https://github.com/MokryYezhik/ds_ml_projects/tree/main/open_data_battle_bank_otkrytie)
 
 # Code example
+```
+def get_max_recursion(arr):
+    if arr:
+        best = arr[0]
+        item = get_max_rec(arr[1:])
+        return item if (item and item > best) else best
+```
 
 # English
 A2-B1
