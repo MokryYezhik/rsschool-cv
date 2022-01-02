@@ -110,6 +110,11 @@ main {
 .aside-container #contacts {
     background-color: rgb(228, 44, 121);
 }
+.aside-container #contacts ul {
+    list-style: none;
+    padding: 0;
+}
+
 
 
 .main-container {
