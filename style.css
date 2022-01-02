@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box; 
+}
+
+:root {
+    --left-width: 30%;
+    --right-width: 70%;
+
+    --color-font: #161A1D;
+    --color-a-visited: #132a13;
+    --color-a-active: #606F49;
+
+    --color-main: #e9f5db80;
+    --color-header: #dcebca;
+    --color-footer: #606F49;
+    --color-highlight: #dcebca;
+    --color-dark: #132a13;
+    --color-code: rgb(224, 220, 220);
+
+}
+
+body {
+    display: block;
+    max-width: 1024px;
+    min-width: 700px;
+    margin: auto;
+
+    font-family: Cabin, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--color-font);
+    background-color: var(--color-main);
+}
+
+header {
+    height: 250px;
+    background-color: var(--color-header);
+    border-bottom: 5px solid var(--color-dark);
+}
+
+footer {
+    height: 50px;
+    background-color: var(--color-footer);
+}
+
+main {
+    background-color: var(--color-main);
+    min-height: 1200px;
+}
+
+
+
+
+.header-container {
+    display: flex;
+}
+.header-photo {
+    width: var(--left-width);
+    display: flex;
+}
+.header-photo img {
+    max-width: 100%;
+    max-height: 100%;
+    /*object-fit: contain;*/
+    /*border-radius: 30vw;*/
+    border-radius: 3rem;
+    padding: 5%;
+    margin: auto;
+}
+.header-info {
+    width: var(--right-width);
+    display: flex;
+    flex-direction: column;
+    /*width: -webkit-fill-available;*/
+    /*height: max-content;*/
+    align-items: end;
+    /*margin: 5% 0 0 0;*/
+    justify-content: space-between;
+
+    text-transform: uppercase;
+}
+
+
+.header-info nav ul {
+    list-style: none;
+    padding: 0;
+}
+.header-info nav li {
+    display: inline-block;
+    transition: transform .2s; /* Animation */
+    margin: 5px;
+}
+.header-info nav li:hover {
+    transform: scale(1.1);
+}
+.header-info nav a, a:link, a:hover, a:visited{
+    color: black;
+    text-decoration: none;
+}
+.header-info h1, span {
+    color: var(--color-dark);
+}
+
+
+
+.main-content {
+    display: flex;
+    background-color: var(--color-main);
+}
+.main-content a:link {
+    color: var(--color-a-active);
+    text-decoration: underline;
+} 
+.main-content a:hover {
+    color: var(--color-a-active);
+    text-decoration: underline;
+}
+.main-content a:visited {
+    color: var(--color-a-visited);
+    text-decoration: underline;
+}
+
+
+
+.aside-container {
+    /*flex-basis: 30%;*/
+    width: var(--left-width);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    padding: 2%;
+}
+.aside-container #language ul,
+.aside-container #contacts ul {
+    list-style: none;
+    padding: 0;
+}
+.aside-container #skills .parent-ul {
+    overflow: auto;
+}
+.aside-container section {
+    border-radius: 1rem;
+    padding: 0 3% 3% 5%;
+    background-color: var(--color-highlight);
+}
+.aside-container h3 {
+    text-align: center;
+    text-transform: uppercase;
+    width: 150px;
+    background-color:var(--color-main);
+    margin: 1rem auto;
+    border: 2px solid var(--color-dark);
+    color: var(--color-dark);
+}
+
+
+
+.main-container {
+    width: var(--right-width);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow: hidden;
+
+    padding: 2%;
+}
+.code {
+    background-color: var(--color-code);
+    max-width: max-content;
+    overflow: auto;
+    margin: 3% auto;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.main-container h3 {
+    text-transform: uppercase;
+    color: var(--color-dark);
+    border-bottom: 2px solid var(--color-dark);
+}
+.main-container p {
+    padding-left: 5%;
+    padding-right: 1%;
+}
+.main-container ul {
+    list-style-position: inside; /*for ul*/
+}
+
+
+footer a, a:link, a:hover, a:visited {
+    color: var(--color-font);
+    text-decoration: none;
+} 
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+}
+.footer-container span {
+    color: var(--color-font);
+}
+.footer-container__item {
+    width: 33.33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-container #github img {
+    margin-right: 5px;
+}
+.footer-container #rsschool {
+    flex-direction: column;
+    font-size: 10px;
+}
+.footer-container #rsschool img {
+    margin-top: 5px;
+}
