@@ -58,4 +58,27 @@ main {
 .main-container {
     background-color:rgb(250, 89, 164);
     width: var(--right-width);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow: hidden;
+}
+.main-container #about {
+    background-color: rgb(121, 61, 233);
+}
+.main-container #education {
+    background-color: rgb(61, 78, 233);
+}
+.main-container #experience {
+    background-color: rgb(61, 179, 233);
+}
+.main-container #code {
+    background-color: rgb(61, 57, 85);
+}
+.code {
+    background-color: chartreuse;
+    max-width: max-content;
+    overflow: auto;
+    margin: 3% auto;
 }
