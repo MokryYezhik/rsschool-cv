@@ -1,6 +1,13 @@
 # Anastasiya Yablokova
 
 # Contacts
+**E-mail**: yaapple@inbox.ru
+
+**Telegram**: [@MokryYezhik](https://t.me/MokryYezhik)
+
+**Github**: [@MokryYezhik](https://github.com/MokryYezhik)
+
+**Discord**: asya (@MokryYezhik)
 
 # About Me
 I have bachelor's degree in Optics and Laser Technologies. When writing my graduation diploma I coded a simple program to control optical tweezer on C# that implements image processing.
