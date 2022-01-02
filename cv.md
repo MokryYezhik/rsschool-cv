@@ -18,6 +18,15 @@ Also I often had to parse websites for my own purposes, so I decided to take FE/
 
 
 # Skills
+- Python
+- C#
+- R
+- SQL
+- Git
+- ML related
+    - Sklearn
+    - Pytorch
+    - TensorFlow.Keras
 
 # Education
 
