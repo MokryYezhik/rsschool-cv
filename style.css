@@ -8,6 +8,16 @@
     --footer-block-width: 33.33%;
 
     --color-font: #161A1D;
+    --color-a-visited: #132a13;
+    --color-a-active: #606F49;
+
+    --color-main: #e9f5db80;
+    --color-header: #dcebca;
+    --color-footer: #606F49;
+    --color-highlight: #dcebca;
+    --color-dark: #132a13;
+    --color-code: rgb(224, 220, 220);
+
 }
 
 body {
@@ -19,30 +29,30 @@ body {
     font-size: 18px;
     line-height: 1.5;
     color: var(--color-font);
+    background-color: var(--color-main);
 }
 
 header {
     height: 250px;
-    background-color: rgb(206, 247, 165);
+    background-color: var(--color-header);
+    border-bottom: 5px solid var(--color-dark);
 }
 
 footer {
     height: 50px;
-    background-color: rgb(165, 247, 179);
+    background-color: var(--color-footer);
 }
 
 main {
-    background-color: rgb(169, 169, 253);
+    background-color: var(--color-main);
     min-height: 1200px;
 }
 
 
 
 
-
 .header-container {
     display: flex;
-    background-color: rgb(247, 168, 168);
 }
 .header-photo {
     width: var(--left-width);
@@ -59,7 +69,6 @@ main {
 }
 .header-info {
     width: var(--right-width);
-    background-color: darkgrey;
     display: flex;
     flex-direction: column;
     /*width: -webkit-fill-available;*/
@@ -71,40 +80,49 @@ main {
     text-transform: uppercase;
 }
 
-.header-info nav {
-    background-color: darkgreen;
-}
-.header-info #name {
-    background-color: crimson;
-}
+
 .header-info nav ul {
-    background-color: cyan;
     list-style: none;
     padding: 0;
 }
 .header-info nav li {
-    background-color: rgb(255, 230, 0);
     display: inline-block;
     transition: transform .2s; /* Animation */
     margin: 5px;
 }
 .header-info nav li:hover {
-    background-color: rgb(255, 136, 0);
     transform: scale(1.1);
 }
 .header-info nav a, a:link, a:hover, a:visited{
     color: black;
     text-decoration: none;
 }
+.header-info h1, span {
+    color: var(--color-dark);
+}
 
 
 
 .main-content {
     display: flex;
-    background-color: rgb(168, 247, 247);
+    background-color: var(--color-main);
 }
+.main-content a:link {
+    color: var(--color-a-active);
+    text-decoration: underline;
+} 
+.main-content a:hover {
+    color: var(--color-a-active);
+    text-decoration: underline;
+}
+.main-content a:visited {
+    color: var(--color-a-visited);
+    text-decoration: underline;
+}
+
+
+
 .aside-container {
-    background-color:rgb(243, 114, 243);
     /*flex-basis: 30%;*/
     width: var(--left-width);
     display: flex;
@@ -112,15 +130,6 @@ main {
     justify-content: space-around;
 
     padding: 2%;
-}
-.aside-container #skills {
-    background-color: rgb(216, 73, 25);
-}
-.aside-container #language {
-    background-color: rgb(221, 218, 30);
-}
-.aside-container #contacts {
-    background-color: rgb(228, 44, 121);
 }
 .aside-container #language ul,
 .aside-container #contacts ul {
@@ -130,20 +139,21 @@ main {
 .aside-container section {
     border-radius: 1rem;
     padding: 0 3% 3% 5%;
+    background-color: var(--color-highlight);
 }
 .aside-container h3 {
     text-align: center;
     text-transform: uppercase;
     width: 150px;
-    background-color:brown;
+    background-color:var(--color-main);
     margin: 1rem auto;
-    border: 2px solid black;
+    border: 2px solid var(--color-dark);
+    color: var(--color-dark);
 }
 
 
 
 .main-container {
-    background-color:rgb(250, 89, 164);
     width: var(--right-width);
 
     display: flex;
@@ -153,20 +163,8 @@ main {
 
     padding: 2%;
 }
-.main-container #about {
-    background-color: rgb(121, 61, 233);
-}
-.main-container #education {
-    background-color: rgb(61, 78, 233);
-}
-.main-container #experience {
-    background-color: rgb(61, 179, 233);
-}
-.main-container #code {
-    background-color: rgb(61, 57, 85);
-}
 .code {
-    background-color: chartreuse;
+    background-color: var(--color-code);
     max-width: max-content;
     overflow: auto;
     margin: 3% auto;
@@ -175,7 +173,8 @@ main {
 }
 .main-container h3 {
     text-transform: uppercase;
-    border-bottom: 2px solid black;
+    color: var(--color-dark);
+    border-bottom: 2px solid var(--color-dark);
 }
 .main-container p {
     padding-left: 5%;
