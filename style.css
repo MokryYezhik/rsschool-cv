@@ -6,16 +6,23 @@
     --left-width: 30%;
     --right-width: 70%;
     --footer-block-width: 33.33%;
+
+    --color-font: #161A1D;
 }
 
 body {
     display: block;
     max-width: 1024px;
     margin: auto;
+
+    font-family: Cabin, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--color-font);
 }
 
 header {
-    height: 200px;
+    height: 250px;
     background-color: rgb(206, 247, 165);
 }
 
@@ -26,8 +33,9 @@ footer {
 
 main {
     background-color: rgb(169, 169, 253);
-    min-height: 1000px;
+    min-height: 1200px;
 }
+
 
 
 
@@ -59,6 +67,8 @@ main {
     align-items: end;
     /*margin: 5% 0 0 0;*/
     justify-content: space-between;
+
+    text-transform: uppercase;
 }
 
 .header-info nav {
@@ -100,6 +110,8 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+
+    padding: 2%;
 }
 .aside-container #skills {
     background-color: rgb(216, 73, 25);
@@ -110,9 +122,22 @@ main {
 .aside-container #contacts {
     background-color: rgb(228, 44, 121);
 }
+.aside-container #language ul,
 .aside-container #contacts ul {
     list-style: none;
     padding: 0;
+}
+.aside-container section {
+    border-radius: 1rem;
+    padding: 0 3% 3% 5%;
+}
+.aside-container h3 {
+    text-align: center;
+    text-transform: uppercase;
+    width: 150px;
+    background-color:brown;
+    margin: 1rem auto;
+    border: 2px solid black;
 }
 
 
@@ -125,6 +150,8 @@ main {
     flex-direction: column;
     justify-content: space-around;
     overflow: hidden;
+
+    padding: 2%;
 }
 .main-container #about {
     background-color: rgb(121, 61, 233);
@@ -143,6 +170,19 @@ main {
     max-width: max-content;
     overflow: auto;
     margin: 3% auto;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.main-container h3 {
+    text-transform: uppercase;
+    border-bottom: 2px solid black;
+}
+.main-container p {
+    padding-left: 5%;
+    padding-right: 1%;
+}
+.main-container ul {
+    list-style-position: inside; /*for ul*/
 }
 
 
