@@ -31,6 +31,29 @@ main {
 
 
 
+.header-container {
+    display: flex;
+    background-color: rgb(247, 168, 168);
+}
+.header-photo {
+    width: var(--left-width);
+    display: flex;
+}
+.header-photo img {
+    max-width: 100%;
+    max-height: 100%;
+    /*object-fit: contain;*/
+    /*border-radius: 30vw;*/
+    border-radius: 3rem;
+    padding: 5%;
+    margin: auto;
+}
+.header-info {
+    width: var(--right-width);
+    background-color: darkgrey;
+}
+
+
 
 .main-content {
     display: flex;
