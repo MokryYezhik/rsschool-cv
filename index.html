@@ -8,6 +8,124 @@
     <title>CV</title>
 </head>
 <body>
-    <h1>CV</h1>
+    <header class="header-container">
+        <div class="header-photo">
+            <img src="/img/profile-photo.jpg" alt="profile-photo">
+        </div>
+        <div class="header-info">
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
+            </nav>
+            <div id="name">
+                <h1>Anastasiya Yablokova</h1>
+                <span>future developer</span>
+            </div>
+        </div>
+    </header>
+    <div class="main-content">
+        <aside class="aside-container">
+            <section id="skills">
+                <h3>Skills</h3>
+                <ul class="parent-ul">
+                    <li>Python</li>
+                    <li>C#</li>
+                    <li>R</li>
+                    <li>SQL</li>
+                    <li>Git</li>
+                    <li>ML related
+                        <ul>
+                            <li>Sklearn</li>
+                            <li>Pytorch</li>
+                            <li>TensorFlow.Keras</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section id="language">
+                <h3>Language</h3>
+                <ul>
+                    <li> <strong>Russian</strong>: Native</li>
+                    <li> <strong>English</strong>: A2-B1</li>
+                </ul>
+            </section>
+            <section id="contacts">
+                <h3>Contacts</h3>
+                <ul>
+                    <li> <img src="/img/icons/mail.svg" alt="mail-icon" width="14" height="14"> yaapple@inbox.ru</li>
+                    <li> <img src="/img/icons/telegram.svg" alt="telegram-icon" width="15" height="15"> <a href="https://t.me/MokryYezhik">MokryYezhik</a></li>
+                    <li> <img src="/img/icons/discord.svg" alt="discord-icon" width="15" height="15"> asya (@MokryYezhik)</li>
+                </ul>
+            </section>
+        </aside>
+        <main class="main-container">
+            <section id="about">
+                <h3>About me</h3>
+                <p>
+                    I have bachelor's degree in Optics and Laser Technologies. 
+                    When writing my graduation diploma I coded a simple program to control optical tweezer on C# that implements image processing.
+                </p>
+                <p>
+                    After graduating from university, I decided slightly change and expand my occupation. 
+                    This lend me to studying computer vision. 
+                    To better understand this topic I started looking into machine learning and deep learning techniques. 
+                    The first step was taking RSSchool ML intro course. 
+                    Studying ML&DL requires a deep understanding of the mathematical apparatus. 
+                    Therefore at the moment I'm expanding my knowledge in linear algebra, probability and statistics.
+                </p>
+                <p>
+                    Also I often had to parse websites for my own purposes, so I decided to take FE/JS course.
+                </p>
+            </section>
+            <section id="education">
+                <h3>Education</h3>
+                <p>Bauman Moscow State Technical University</p>
+                <p style="margin-bottom: 0;">
+                    Self education:
+                </p>
+                <ul style="margin-top: 0;">
+                    <li>RSSchool ML intro</li>
+                    <li>Stepik (statistics, ml)</li>
+                </ul>
+            </section>
+            <section id="experience">
+                <h3>Experience</h3>
+                <p>
+                    I have no representative projects at the moment. Hope to alter this in the near future.
+                </p>
+                <p>
+                    ML competition:
+                    <a href="https://github.com/MokryYezhik/ds_ml_projects/tree/main/open_data_battle_bank_otkrytie">github link</a>
+                </p>
+            </section>
+            <section id="code">
+                <h3>Code example</h3>
+                <div><pre class="code">
+<code>def get_max_rec(arr):
+    if arr:
+        best = arr[0]
+        item = get_max_rec(arr[1:])
+        return item if (item and item > best) else best</code></pre></div>
+            </section>
+        </main>
+    </div>
+    <footer class="footer-container">
+        <a href="https://github.com/MokryYezhik" id="github" class="footer-container__item">
+            <img src="/img/icons/github.svg" alt="github-icon" height="20" width="20">
+            <span>visit my github</span>
+        </a>
+        <span id="year" class="footer-container__item">
+            &COPY;2022
+        </span>
+        <a href="https://rs.school/js-stage0/" id="rsschool" class="footer-container__item">
+            <span>accomplished at</span>
+            <img src="img/icons/rsschool.svg" alt="rsschool-icon" width="70">
+        </a>
+    </footer>
 </body>
 </html>
