@@ -29,6 +29,11 @@ Also I often had to parse websites for my own purposes, so I decided to take FE/
     - TensorFlow.Keras
 
 # Education
+Bauman Moscow State Technical University
+
+Self education:
+- RSSchool ML intro
+- Stepik (statistics, ml)
 
 # Experience
 
