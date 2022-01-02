@@ -43,3 +43,4 @@ ML competition: [github link](https://github.com/MokryYezhik/ds_ml_projects/tree
 # Code example
 
 # English
+A2-B1
