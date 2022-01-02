@@ -52,6 +52,39 @@ main {
 .header-info {
     width: var(--right-width);
     background-color: darkgrey;
+    display: flex;
+    flex-direction: column;
+    /*width: -webkit-fill-available;*/
+    /*height: max-content;*/
+    align-items: end;
+    /*margin: 5% 0 0 0;*/
+    justify-content: space-between;
+}
+
+.header-info nav {
+    background-color: darkgreen;
+}
+.header-info #name {
+    background-color: crimson;
+}
+.header-info nav ul {
+    background-color: cyan;
+    list-style: none;
+    padding: 0;
+}
+.header-info nav li {
+    background-color: rgb(255, 230, 0);
+    display: inline-block;
+    transition: transform .2s; /* Animation */
+    margin: 5px;
+}
+.header-info nav li:hover {
+    background-color: rgb(255, 136, 0);
+    transform: scale(1.1);
+}
+.header-info nav a, a:link, a:hover, a:visited{
+    color: black;
+    text-decoration: none;
 }
 
 
